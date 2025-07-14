@@ -1,0 +1,26 @@
+[
+  {
+    "name": "West Coast",
+    "towns": ["Langebaan", "Saldanha", "Velddrif", "Yzerfontein", "Darling", "Paternoster"]
+  },
+  {
+    "name": "Winelands",
+    "towns": ["Stellenbosch", "Franschhoek", "Paarl", "Wellington", "Somerset West", "Tulbagh"]
+  },
+  {
+    "name": "Overberg",
+    "towns": ["Hermanus", "Grabouw", "Caledon", "Gansbaai", "Stanford", "Bredasdorp"]
+  },
+  {
+    "name": "Cape Metro",
+    "towns": ["Cape Town CBD", "Southern Suburbs", "Northern Suburbs", "Atlantic Seaboard", "Cape Flats", "Helderberg"]
+  },
+  {
+    "name": "Garden Route",
+    "towns": ["Mossel Bay", "Knysna", "Plettenberg Bay", "George", "Oudtshoorn", "Wilderness"]
+  },
+  {
+    "name": "Karoo",
+    "towns": ["Beaufort West", "Prince Albert", "Laingsburg", "Matjiesfontein", "Sutherland"]
+  }
+]
