@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Your Business - Western Cape Directory</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="mb-0">Add Your Business Listing</h3>
+                        </div>
+                        <div class="card-body">
+                            <form id="listingForm">
+                                <div class="form-group">
+                                    <label for="businessName">Business Name *</label>
+                                    <input type="text" class="form-control" id="businessName" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="businessCategory">Category *</label>
+                                    <select class="form-control" id="businessCategory" required>
+                                        <option value="">Select a category</option>
+                                        <option value="Estate Agents">Estate Agents</option>
+                                        <option value="Plumbers">Plumbers</option>
+                                        <option value="Electricians">Electricians</option>
+                                        <option value="Auto Repairs">Auto Repairs</option>
+                                        <option value="Builders">Builders</option>
+                                        <option value="Restaurants">Restaurants</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="businessArea">Region *</label>
+                                            <select class="form-control" id="businessArea" required>
+                                                <option value="">Select a region</option>
+                                                <option value="West Coast">West Coast</option>
+                                                <option value="Winelands">Winelands</option>
+                                                <option value="Overberg">Overberg</option>
+                                                <option value="Cape Metro">Cape Metro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="businessTown">Town/Area *</label>
+                                            <select class="form-control" id="businessTown" required disabled>
+                                                <option value="">Select region first</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="businessDescription">Description *</label>
+                                    <textarea class="form-control" id="businessDescription" rows="3" required></textarea>
+                                    <small class="form-text text-muted">Describe your business in 50-200 words</small>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="businessEmail">Email *</label>
+                                    <input type="email" class="form-control" id="businessEmail" required>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="businessPhone">Phone *</label>
+                                            <input type="tel" class="form-control" id="businessPhone" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="businessWebsite">Website</label>
+                                            <input type="url" class="form-control" id="businessWebsite">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="businessAddress">Address *</label>
+                                    <textarea class="form-control" id="businessAddress" rows="2" required></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Business Photo</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="businessPhoto">
+                                        <label class="custom-file-label" for="businessPhoto">Choose file</label>
+                                        <small class="form-text text-muted">Free listings can have 1 photo (max 5MB)</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="termsAgreement" required>
+                                        <label class="form-check-label" for="termsAgreement">
+                                            I agree to the <a href="#">Terms of Service</a> and confirm that this business is legitimate
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <hr>
+                                
+                                <h5 class="mb-3">Listing Options</h5>
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card pricing-card">
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Free Listing</h5>
+                                                <h2 class="my-3">R0</h2>
+                                                <ul class="list-unstyled mb-4">
+                                                    <li>1 Photo</li>
+                                                    <li>Basic Information</li>
+                                                    <li>Appears in search results</li>
+                                                    <li class="text-muted">No video</li>
+                                                    <li class="text-muted">No priority placement</li>
+                                                </ul>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="tier" id="tierFree" value="free" checked>
+                                                    <label class="form-check-label font-weight-bold" for="tierFree">
+                                                        Select Free Listing
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card pricing-card featured">
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Premium Listing</h5>
+                                                <h2 class="my-3">R199<span class="h6">/month</span></h2>
+                                                <ul class="list-unstyled mb-4">
+                                                    <li>10 Photos</li>
+                                                    <li>1 Video</li>
+                                                    <li>Enhanced Visibility</li>
+                                                    <li>Priority in Search</li>
+                                                    <li>Business Analytics</li>
+                                                </ul>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="tier" id="tierPremium" value="premium">
+                                                    <label class="form-check-label font-weight-bold" for="tierPremium">
+                                                        Select Premium
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="boostSection" class="d-none">
+                                    <h5 class="mb-3">Boost Your Listing</h5>
+                                    <div class="alert alert-info">
+                                        <i class="fas fa-info-circle mr-2"></i> Boosted listings appear at the top of search results for a limited time
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="boost-option">
+                                                <h5>3-Day Weekend Boost</h5>
+                                                <p>Perfect for weekends and special events</p>
+                                                <h3>R150</h3>
+                                                <button type="button" class="btn btn-outline-primary btn-block mt-3">Select</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="boost-option featured">
+                                                <h5>7-Day Boost</h5>
+                                                <p>Featured for a full week (Premium discount)</p>
+                                                <h3>R100 <small class="text-muted"><del>R150</del></small></h3>
+                                                <button type="button" class="btn btn-primary btn-block mt-3">Select</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">Submit Listing</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update file input label
+            document.getElementById('businessPhoto').addEventListener('change', function(e) {
+                const fileName = e.target.files[0] ? e.target.files[0].name : "Choose file";
+                this.nextElementSibling.textContent = fileName;
+            });
+            
+            // Update towns based on selected region
+            document.getElementById('businessArea').addEventListener('change', function() {
+                const townsSelect = document.getElementById('businessTown');
+                townsSelect.innerHTML = '';
+                townsSelect.disabled = !this.value;
+                
+                if (this.value) {
+                    const region = regions.find(r => r.name === this.value);
+                    if (region) {
+                        region.towns.forEach(town => {
+                            const option = document.createElement('option');
+                            option.value = town;
+                            option.textContent = town;
+                            townsSelect.appendChild(option);
+                        });
+                    }
+                }
+            });
+            
+            // Show boost options when premium is selected
+            document.querySelectorAll('input[name="tier"]').forEach(radio => {
+                radio.addEventListener('change', function() {
+                    document.getElementById('boostSection').classList.toggle('d-none', this.value !== 'premium');
+                });
+            });
+            
+            // Form submission
+            document.getElementById('listingForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Your business has been submitted! In a real implementation, this would connect to Firebase.');
+                // Here you would send the data to Firebase Firestore
+            });
+        });
+        
+        // Regions data for the towns dropdown
+        const regions = [
+            { 
+                name: "West Coast", 
+                towns: ["Langebaan", "Saldanha", "Velddrif", "Yzerfontein"] 
+            },
+            { 
+                name: "Winelands", 
+                towns: ["Stellenbosch", "Franschhoek", "Paarl", "Wellington"] 
+            },
+            { 
+                name: "Overberg", 
+                towns: ["Hermanus", "Grabouw", "Caledon", "Gansbaai"] 
+            },
+            { 
+                name: "Cape Metro", 
+                towns: ["Cape Town CBD", "Southern Suburbs", "Northern Suburbs", "Atlantic Seaboard"] 
+            }
+        ];
+    </script>
+</body>
+</html>
