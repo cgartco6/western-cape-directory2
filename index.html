@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Western Cape Business Directory</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo" height="40"> WC Business Directory
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="area.html">Browse by Area</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Browse by Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="add-listing.html">Add Your Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Business Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero bg-light py-5">
+        <div class="container text-center">
+            <h1 class="display-4 mb-3">Western Cape Business Directory</h1>
+            <p class="lead mb-4">Find trusted businesses across the Western Cape - from Cape Town to the Garden Route</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form id="searchForm">
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-lg" placeholder="Search for businesses...">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary btn-lg" type="submit">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Areas -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Explore by Region</h2>
+            <div class="row" id="featuredAreas"></div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Popular Categories</h2>
+            <div class="row" id="featuredCategories"></div>
+        </div>
+    </section>
+
+    <!-- Boosted Listings -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Businesses</h2>
+            <div class="row" id="boostedListings"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Western Cape Directory</h5>
+                    <p>Connecting businesses and customers across the Western Cape since 2023.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="area.html" class="text-light">Browse by Area</a></li>
+                        <li><a href="category.html" class="text-light">Browse by Category</a></li>
+                        <li><a href="add-listing.html" class="text-light">Add Your Business</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@wcdirectory.co.za<br>Phone: 021 123 4567</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-light mr-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light mr-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Western Cape Business Directory. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/firebase-init.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
