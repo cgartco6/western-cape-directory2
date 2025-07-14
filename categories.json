@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Estate Agents",
+    "subcategories": ["Residential", "Commercial", "Industrial", "Farms"]
+  },
+  {
+    "name": "Plumbers",
+    "subcategories": ["Emergency", "Installation", "Maintenance", "Drain Cleaning"]
+  },
+  {
+    "name": "Electricians",
+    "subcategories": ["Residential", "Commercial", "Industrial", "Auto Electricians"]
+  },
+  {
+    "name": "Auto Services",
+    "subcategories": ["Mechanics", "Auto Electricians", "Panel Beaters", "Tire Services"]
+  },
+  {
+    "name": "Home Services",
+    "subcategories": ["Cleaning", "Gardening", "Pest Control", "Renovations"]
+  },
+  {
+    "name": "Professional Services",
+    "subcategories": ["Accountants", "Lawyers", "Consultants", "Architects"]
+  },
+  {
+    "name": "Health & Beauty",
+    "subcategories": ["Doctors", "Dentists", "Hair Salons", "Spa & Wellness"]
+  },
+  {
+    "name": "Restaurants",
+    "subcategories": ["Fine Dining", "Casual", "Takeaway", "Cafés"]
+  },
+  {
+    "name": "Retail",
+    "subcategories": ["Clothing", "Electronics", "Furniture", "Specialty Stores"]
+  }
+]
